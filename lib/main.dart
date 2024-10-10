@@ -6,7 +6,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:live_location_tracker/routes/routes.dart';
-import 'package:live_location_tracker/splash%20screnn/splash_binding.dart';
+
+import 'splash screen/splash_binding.dart';
 
 
 
