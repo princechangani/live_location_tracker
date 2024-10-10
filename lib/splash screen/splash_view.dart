@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:live_location_tracker/constant/app_colors.dart';
-import 'package:live_location_tracker/splash%20screnn/splash_controller.dart';
+import 'package:live_location_tracker/splash%20screen/splash_controller.dart';
 
 
 class SplashView extends GetView<SplashController> {
