@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyCl7xFOAhqFFa8NpCRSWHpMke6XhymmPb8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>253461899915</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.liveLocationTracker</string>
+	<key>PROJECT_ID</key>
+	<string>livelocationtracker-10-10-24</string>
+	<key>STORAGE_BUCKET</key>
+	<string>livelocationtracker-10-10-24.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:253461899915:ios:6f4598a8f6b3bf0305028e</string>
+</dict>
+</plist>
