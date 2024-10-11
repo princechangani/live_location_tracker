@@ -75,24 +75,28 @@ class MyGoogleMapController extends GetxController {
     }
   }
 
-  Future<void> _fetchRoute() async {
+  void _fetchRoute() async {
     if (currentPosition.value != null && destinationPosition.value != null) {
       try {
         PolylineResult? result = await Repo.getRouteBetweenTwoPoints(
-          start: LatLng(currentPosition!.value!.latitude, currentPosition!.value!.longitude),
-          end: destinationPosition.value,
+          start: LatLng(currentPosition.value!.latitude, currentPosition.value!.longitude),
+          end:LatLng(22.7749, 70.4194) ,
           color: Colors.blue,
         );
 
-        if (result != null && result.points.isNotEmpty) {
-          polylines.add(
-            Polyline(
-              polylineId: const PolylineId('route'),
+        if (result == null) {
+          throw Exception('Failed to fetch route.');
+        }
+
+        if (result.points.isNotEmpty) {
+
+            polylines.add(Polyline(
+              polylineId: PolylineId('route'),
               points: result.points.map((e) => LatLng(e.latitude, e.longitude)).toList(),
               color: Colors.blue,
               width: 5,
-            ),
-          );
+            ));
+
         } else {
           throw Exception('No route found.');
         }
@@ -101,4 +105,5 @@ class MyGoogleMapController extends GetxController {
       }
     }
   }
+
 }

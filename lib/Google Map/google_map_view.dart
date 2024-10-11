@@ -21,8 +21,8 @@ class GoogleMapView extends GetView<MyGoogleMapController> {
             ),
             zoom: 10, // Adjust the zoom level as needed
           ),
-          markers: controller.markers,
-          polylines: controller.polylines,
+          markers: controller.markers.toSet(),
+          polylines: controller.polylines.toSet(),
           onMapCreated: (GoogleMapController mapController) {
             controller.mapController = mapController;
             controller.mapController!.animateCamera(
