@@ -16,7 +16,7 @@ class Routes {
 
   static final routes = [
     GetPage(name: splash, page: () => SplashView(), binding: SplashBinding()),
-    GetPage(name: googleMap, page: ()=>GoogleMapView(),binding: GoogleMapBinding())
+    GetPage(name: googleMap, page: ()=> GoogleMapView(),binding: GoogleMapBinding())
 
 
   ];
